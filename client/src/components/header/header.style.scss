@@ -1,0 +1,26 @@
+header {
+    background: #fad9ce;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    text-align: center;
+    line-height: 55px;
+
+    a {
+        padding: 20px;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 65px;
+}
+
+.fa-shopping-bag {
+    padding: 18px;
+}

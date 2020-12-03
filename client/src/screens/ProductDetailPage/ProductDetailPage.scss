@@ -1,0 +1,40 @@
+.product-container {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #64958f;
+        cursor: pointer;
+        color: white;
+        font-size: large;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            background: #d69770;
+        }
+    }
+
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 100;
+        margin-bottom: 1rem;
+    }
+    .product-page-image {
+        max-width: 400px;
+    }
+
+    .product-description{
+        margin: 23px 0;
+    }
+
+    .product-price{
+        font-size: x-large;
+        color: #065c6f;
+    }
+}

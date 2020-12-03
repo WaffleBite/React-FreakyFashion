@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #fffefb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin: 0 0 35px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color: grey !important;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.my-container {
+    padding: 115px 150px;
+}
+
+hr {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.no-ul {
+    list-style: none;
+}
+
+.product-grid {
+    display: grid;
+    gap: 29px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+.product-image-container {
+    /*background-repeat: no-repeat;
+    background-size: contain;*/
+    /*height: 255px;*/
+    transition: 0.5s;
+    overflow: hidden;
+    width: fit-content;
+    max-width: 232px;
+}
+
+.product-image-container:hover {
+    opacity: 0.8;
+    box-shadow: 1px 5px 10px 0px rgb(0 0 0 / 26%);
+}
+
+.product-image {
+    height: 290px;
+}
+
+.fas, .far {
+    color: #005c66;
+}

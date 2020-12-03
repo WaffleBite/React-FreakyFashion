@@ -1,0 +1,28 @@
+.carousel-container {
+    padding: 31px 265px;
+
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        height: 700px;
+
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 252px;
+            left: 15%;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            background: #ffffff9e;
+            color: black;
+        }
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+
+    background: #dca28e;
+    width: 60px;
+}

@@ -1,0 +1,13 @@
+.shop-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+}
+
+h1 {
+    margin-bottom: 3.5rem;
+
+    a {
+        width: 204px;
+    }
+}

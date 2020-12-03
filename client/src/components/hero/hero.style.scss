@@ -1,0 +1,50 @@
+.hero-container {
+    position: relative;
+    background-color: #9e9e38;
+    height: 37rem;
+    background-position-y: -265px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 150px;
+    background-image: url("https://images.pexels.com/photos/714696/pexels-photo-714696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+    .hero-titles-container {
+        position: absolute;
+        top: 26%;
+        width: 700px;
+        text-align: -webkit-center;
+
+        .hero-title {
+            font-family: 'Bebas Neue';
+            letter-spacing: 4px;
+            font-weight: 500;
+            font-size: 2.9rem;
+            margin-bottom: 0px;
+            color: #9a5b46;
+        }
+        .hero-subtitle {
+            margin-top: 29px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }  
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 141px;
+
+            .hero-button {
+                letter-spacing: 2px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                padding: 11px 32px;
+                border: none;
+                background: white;
+            
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

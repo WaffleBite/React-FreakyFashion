@@ -1,0 +1,29 @@
+.featured-categories {
+    height: 335px;
+    width: 360px;
+    background: aliceblue;
+    text-align: center;
+    margin-right: 77px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    // background-image: url(../../Images/Categories/party.jpg);
+
+    &:hover {
+        box-shadow: -2px 2px 11px #696969;
+    }
+
+    .category-name {
+        line-height: 335px;
+        font-size: 2.5rem;
+        color: #9c3d1e;
+        letter-spacing: 7px;
+        font-family: 'Bebas Neue';
+        -webkit-text-stroke: 0.5px #d0d0d0;
+    }
+}
+    
+.flex{
+    display: flex;
+    justify-content: center;
+}

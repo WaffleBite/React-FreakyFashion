@@ -1,0 +1,40 @@
+footer {
+    height: fit-content;
+    background: #d8c6bc;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 38px 0;
+
+    div {
+        display: flex;
+    }
+
+    p {
+        margin: 0 23px;
+        line-height: 47px;
+        font-weight: 600;
+    }
+}
+
+.footer-social-links {
+    padding-bottom: 38px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        letter-spacing: 3px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 21px;
+        text-align: center;
+    }
+}

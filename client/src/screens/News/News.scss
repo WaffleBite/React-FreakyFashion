@@ -1,0 +1,18 @@
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(4, auto); 
+    gap: 50px 0px;
+
+    .card {
+        width: 20rem;
+
+        .card-body {
+            max-height: 226px; 
+            overflow: auto;
+
+            a {
+                background: #e0edea;border: none;
+            }
+        }
+    }
+}
