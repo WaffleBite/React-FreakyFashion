@@ -1,26 +1,53 @@
 import './ProductDetailPage.scss';
+import { useEffect, useState} from 'react';
+import { useHistory, useParams  } from 'react-router-dom';
 
-import image from '../../Images/Products/1.jpg';
+const ProductDetailPage = ({  match}) => {
 
-const ProductDetailPage = () => (
-    <div class='my-container'>
-        <div class='product-container'>
-            <div>
-                <img class="product-page-image" src={image} alt="product image" />
+
+    //const history = useHistory();
+    //var products;
+    //if (history.location.state.products != undefined) {
+
+    //    products = history.location.state.products
+    //} else {
+
+    //    products = props.products;
+    //}
+    const { id } = useParams();
+    const [products, setProducts] = useState([])
+  
+     
+    useEffect(() => {
+
+        fetch("https://localhost:44302/Umbraco/Api/Products/GetProductsById/"+id)
+            .then(x => x.json())
+            .then(data => {
+                setProducts(data);
+            });
+    }, []);
+    
+    
+    return(
+        <div class='my-container'>
+            <div class='product-container'>
+                <div>
+                    <img class="product-page-image" src={products.imageUrl} alt="productPicture" />
+                </div>
+                <div>
+                    <h1>{products.name}</h1>
+                    <p class='product-price'>{products.price} kr</p>
+                    <div className="product-description" dangerouslySetInnerHTML={{ __html: products.description }}></div>
+                   
+                    <button>Buy</button>
+                    <br /> <br />
+                    <hr />
+                    <small>NO. {products.artNumber}</small>
+                </div>
             </div>
-            <div>
-                <h1>productTitle</h1>
-                <p class='product-price'>500 kr</p>
-                <p class='product-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper tellus bibendum, porta erat at, vulputate libero. Praesent bibendum suscipit turpis, porta aliquet ipsum pellentesque vel. Praesent vel egestas felis. Donec mollis aliquam felis, id finibus odio porttitor et. Duis sit amet viverra odio, quis eleifend est. Nullam aliquet, ante in fermentum blandit, odio mauris aliquam felis, quis condimentum nunc justo sed velit. </p>
-                <button>Buy</button>
-                <br /> <br />
-                <hr />
-                <small>NO. articleNumber</small>
-            </div>
+            {/* Recommended products */}
         </div>
-
-   {/* Recommended products */}
-    </div>
-)
+    )
+}
 
 export default ProductDetailPage;

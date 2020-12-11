@@ -8,6 +8,7 @@ import ShopPage from './screens/Shop/Shop';
 import NewsPage from './screens/News/News';
 import SearchPage from './screens/Search/Search';
 import ProductDetailPage from './screens/ProductDetailPage/ProductDetailPage';
+import CategoryPage from './screens/CategoryPage/CategoryPage';
 
 class App extends React.Component {
   render() {
@@ -17,10 +18,12 @@ class App extends React.Component {
         <Header/>
           <Switch>
             <Route exact path="/" component={HomePage}/>
-            <Route path="/shop" component={ShopPage}/>
+            <Route exact path="/shop" component={ShopPage}/>
+            <Route path="/shop/:id" component={CategoryPage}/>
+            <Route path="/product/:id" component={ProductDetailPage}/>
             <Route path="/news" component={NewsPage}/>
+            {/* <Route path="/news/:id" component={NewsPage}/> */}
             <Route path="/search" component={SearchPage}/>
-            <Route path="/product" component={ProductDetailPage}/>
           </Switch>
         <Footer/>
       </div>
